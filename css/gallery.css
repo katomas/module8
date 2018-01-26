@@ -1,0 +1,437 @@
+body {
+	font-family: "Pathway Gothic One", sans-serif;
+	background: url(../img/background.jpg) no-repeat;
+}
+
+.wrapper {
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 1024px;
+	box-sizing: border-box;
+}
+
+header {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+h1 {
+    height: 90px;
+	width: 90px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	line-height: 90px;
+	text-align: center;
+	font-family: 'Dorsa', sans-serif;
+	font-size: 48px;
+    color: #263555;
+    margin: 0 auto;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 250px;
+	margin: 0 auto;
+}
+
+.submenu {
+	display: none;
+}
+
+ol.submenu {
+	width: 46px;
+	z-index: 10;
+	padding: 4px 2px;
+	background: #f2f2f3;
+	border-radius: 2px;
+	position: absolute;
+	left: 17px;
+	top: 23px;
+}
+
+li.submenu a {
+	color: #6b7488;
+}
+
+ol.submenu::before {
+ content: "";
+ top: -5px;
+ left: 20px;
+ position: absolute;
+ border-style: solid;
+ border-width: 0 4px 6px 4px;
+ border-color: transparent transparent #f2f2f3 transparent;
+}
+
+.menu-items:hover .submenu {
+	display: block;
+}
+
+img {
+	width: 200px;
+}
+
+.circle {
+	order: -1;
+	width: 100%;
+    padding-bottom: 10px;
+}
+
+.menu-items {
+	width: 33%;
+	text-align: center;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.menu-items a {
+	text-align: center;
+	color: #ffffff;
+}
+
+.menu-items a:hover {
+	color: #263555;
+}
+
+main {
+	background: #fff;
+	padding: 30px;
+	position: relative;
+}
+
+h2 {
+	margin-bottom: 20px;
+	color: #263555;
+	font-size: 20px;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery-item {
+	margin-bottom: 10px;
+    background: #000;
+    height: auto;
+}
+
+.gallery-item img {
+	height: 100%;
+}
+
+.gallery-item,
+.gallery-item img {
+	width: 100%;
+	max-width: 440px;
+}
+
+.gallery-item:nth-last-of-type(-n+3) {
+	display: none;
+}
+
+.to-top {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #38afe5;
+  display: block;
+  position: absolute;
+  left: 285px;
+  bottom: 5px;
+}
+
+.to-top img {
+	width: auto;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.info {
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #30455b;
+	color: #ffffff;
+}
+
+.info a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans Condensed";
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+footer p {
+  color: #ffffff;
+  font-family: 'Didact Gothic', sans-serif;
+  padding: 5px 20px 30px;
+  font-size: 8px;
+}
+
+.info p {
+  color: #ffffff;
+  font-family: 'Didact Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 13px;
+}
+
+.contacts a {
+  padding-left: 15px;
+}
+
+.nav {
+  padding-top: 10px;
+}
+
+.contacts p::before {
+  content: url(../img/smartphone-call.svg);
+  position: relative;
+  top: 4px;
+  left: -5px;
+}
+
+.contacts p:last-child::before {
+  content: url(../img/email.svg);
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+}
+
+.social a {
+  width: 30px;
+  height: 30px;
+  margin: 10px 5px;
+  border-radius: 50%;
+}
+
+.twitter {
+ background: #fff url("../img/sprits-social.png") -45px -45px no-repeat;
+}
+
+.facebook {
+ background: #fff url("../img/sprits-social.png") -5px -5px no-repeat;
+}
+
+.google-plus {
+ background: #fff url("../img/sprits-social.png") -45px -5px no-repeat;
+}
+
+.instagram {
+ background: #fff url("../img/sprits-social.png") -5px -45px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+	.to-top {
+		left: 445px;
+	}
+
+    h2 {
+    	font-size: 25px;
+    }
+
+    footer p {
+    	padding: 5px 100px 30px;
+    	text-align: center;
+    	font-size: 10px;
+    }
+
+    .info {
+    	padding-left: 50px;
+    	padding-right: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+	
+	.menu-items{
+	font-size: 30px;
+	}
+
+    h1 {
+    	height: 130px;
+    	width: 130px;
+    	line-height: 130px;
+    	font-size: 70px;
+    }
+
+    h2 {
+    	font-size: 35px;
+    }
+
+    ol.submenu {
+    	top: 35px;
+    }
+
+	li.submenu {
+		height: 26px;
+	}
+    
+    li.submenu a {
+    	font-size: 20px;
+    	vertical-align: middle;
+    }
+
+	.gallery-item:nth-child(7),
+	.gallery-item:nth-child(8) {
+		display: inherit;
+	}
+    
+	.gallery-item:nth-child(9) {
+		display: none;
+	}
+
+	.gallery-item {
+		max-width: 340px;
+	}
+    
+    .gallery {
+    	justify-content: space-between;
+    }
+
+    footer p {
+    padding: 0 0 30px;
+    font-size: 13px;
+    }
+
+    .contacts p::before {
+    content: '';
+    }
+
+    .contacts p:last-child::before {
+    content: '';
+    }
+
+    .contacts {
+    display: inline-block;
+    width: auto;
+    padding-top: 29px;
+    }
+
+    .contacts a {
+    padding-left: 3px;
+    }
+
+    .info p {
+    padding: 3px;
+    font-size: 12px;
+    }
+
+    .info a {
+    	font-size: 17px;
+    }
+
+    .to-top {
+    left: 735px;
+    }
+
+    .social a {
+       width: 40px;
+       height: 40px;
+       margin: 10px 5px 25px;
+    }
+
+    footer .twitter {
+   	   background: #fff url("../img/sprits-social.png") -40px -40px no-repeat;
+	 }
+
+	footer .facebook {
+	   background: #fff url("../img/sprits-social.png") -0px -0px no-repeat;
+	}
+
+	footer .google-plus {
+	   background: #fff url("../img/sprits-social.png") -40px -0px no-repeat;
+	}
+
+	footer .instagram {
+	   background: #fff url("../img/sprits-social.png") -0px -40px no-repeat;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    
+    h1 {
+    	font-size: 80px;
+    	height: 150px;
+    	width: 150px;
+    	line-height: 150px;
+    }
+
+    .circle {
+    	order: 0;
+    }
+
+    .menu {
+    	flex-wrap: nowrap;
+    	width: 600px;
+    	align-items: center;
+    }
+
+    .menu-items {
+    	font-size: 25px;
+    }
+
+    ol.submenu {
+     left: 8px;
+     top: 30px;
+    }
+
+    h2 {
+    	font-size: 35px;
+    }
+
+	.gallery-item:nth-child(9) {
+		display: inherit;
+	}
+
+	.gallery-item {
+		max-width: 300px;
+	}
+    
+   main {
+   	    padding: 50px;
+   }
+
+	.to-top {
+	    left: 985px;
+	}
+
+	.info a {
+		font-size: 18px;
+	}
+
+	.info p {
+		font-size: 12px
+	}
+
+	footer p {
+		font-size: 15px;
+	}
+}
+
+
+
